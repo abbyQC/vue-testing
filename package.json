@@ -9,10 +9,25 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "ava": {
+    "require": [
+      "@babel/register",
+      "./test/_setup-browser-env.js"
+    ]
+  },
   "devDependencies": {
-    "avd": "0.0.9"
+    "avd": "0.0.9",
+    "babel-register": "^6.26.0"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.9.0",
+    "ava": "^3.8.2",
     "vue": "^2.6.11"
   }
 }
